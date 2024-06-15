@@ -1,0 +1,116 @@
+#Install Docker
+
+sudo apt update
+
+sudo apt install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+
+sudo apt update
+
+sudo apt install docker-ce docker-ce-cli containerd.io
+
+sudo apt update
+
+apt list -a docker-ce
+
+docker container run hello-world
+
+sudo apt update && sudo apt upgrade -y
+
+apt install python3-pip -y
+
+wget https://gethstore.blob.core.windows.net/builds/geth-linux-amd64-1.10.23-d901d853.tar.gz
+
+tar -xvzf geth-linux-amd64-1.10.23-d901d853.tar.gz
+
+cd geth-linux-amd64-1.10.23-d901d853/
+
+./geth account new --keystore ./keystore
+
+Pass : 85208520
+
+
+Public address of the key:   ...
+Path of the secret key file: /root/geth-linux-amd64-1.10.23-d901d853/keystore/UTC--2022-11-01T09-15-14.603202325Z--c7d34b4788dbceff5d95acc5cb54e59911be7d2c
+
+cd $home
+
+0.1 TBNB
+
+docker pull nulink/nulink:latest   please before run code install docker
+
+cd /root
+
+mkdir nulink
+
+cp /root/geth-linux-amd64-1.10.23-d901d853/keystore/UTC--2022-11-01T09-15-14.603202325Z--c7d34b4788dbceff5d95acc5cb54e59911be7d2c /root/nulink
+
+chmod -R 777 /root/nulink
+
+pip install virtualenv
+
+virtualenv /root/nulink-venv
+
+source /root/nulink-venv/bin/activate
+
+wget https://download.nulink.org/release/core/nulink-0.2.0-py3-none-any.whl --no-check-certificate
+
+pip install nulink-0.2.0-py3-none-any.whl
+
+pip install --upgrade pip
+
+source /root/nulink-venv/bin/activate
+
+python -c "import nulink"
+
+nulink --help
+
+export NULINK_KEYSTORE_PASSWORD=85208520
+
+export NULINK_OPERATOR_ETH_PASSWORD=85208520
+
+docker run -it --rm \
+-p 9151:9151 \
+-v /root/nulink:/code \
+-v /root/nulink:/home/circleci/.local/share/nulink \
+-e NULINK_KEYSTORE_PASSWORD \
+nulink/nulink nulink ursula init \
+--signer keystore:///code/UTC--2022-11-01T09-15-14.603202325Z--c7d34b4788dbceff5d95acc5cb54e59911be7d2c \
+--eth-provider https://data-seed-prebsc-2-s2.binance.org:8545/ \
+--network horus \
+--payment-provider https://data-seed-prebsc-2-s2.binance.org:8545/ \
+--payment-network bsc_testnet \
+--operator-address 0xC7D34b4788dBCeFf5D95ACc5CB54E59911BE7d2c \
+--max-gas-price 100
+
+phrase ro vared kon
+
+Generated keystore
+
+Public Key:   ...
+Path to Keystore: /home/circleci/.local/share/nulink/keystore
+
+- You can share your public key with anyone. Others need it to interact with you.
+- Never share secret keys with anyone!
+- Backup your keystore! Character keys are required to interact with the protocol!
+- Remember your password! Without the password, it's impossible to decrypt the key!
+
+docker run --restart on-failure -d \
+--name ursula \
+-p 9151:9151 \
+-v /root/nulink:/code \
+-v /root/nulink:/home/circleci/.local/share/nulink \
+-e NULINK_KEYSTORE_PASSWORD \
+-e NULINK_OPERATOR_ETH_PASSWORD \
+nulink/nulink nulink ursula run --no-block-until-ready
+
+docker logs -f ursula
+
+0x...
+
+https://185.110.189.66:9151
+
+https://docs.google.com/forms/d/e/1FAIpQLSdFhnZWG6p6XLY3xqNSMRJbFFN3_M0nRXG4E23X0RPVB6b4yA/viewform
