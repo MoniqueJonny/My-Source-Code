@@ -30,7 +30,7 @@ cd geth-linux-amd64-1.10.23-d901d853/
 
 ./geth account new --keystore ./keystore
 
-Pass : 85208520
+#Pass : 85208520
 
 
 Public address of the key:   ...
