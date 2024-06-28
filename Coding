@@ -40,7 +40,7 @@ cd $home
 
 docker pull nulink/nulink:latest   please before run code install docker
 
-cd /root
+cd 
 
 mkdir nulink
 
