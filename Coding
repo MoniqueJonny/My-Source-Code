@@ -16,6 +16,7 @@ sudo apt update
 
 apt list -a docker-ce
 
+/. data
 docker container run hello-world
 
 sudo apt update && sudo apt upgrade -y
