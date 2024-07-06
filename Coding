@@ -109,7 +109,7 @@ nulink/nulink nulink ursula run --no-block-until-ready
 
 docker logs -f ursula
 
-0x...
+0x...!
 
 https://185.110.189.66:9151
 
