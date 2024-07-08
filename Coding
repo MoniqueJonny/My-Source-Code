@@ -88,6 +88,8 @@ nulink/nulink nulink ursula init \
 
 phrase ro vared kon
 
+cd /.
+
 Generated keystore
 
 Public Key:   ...
