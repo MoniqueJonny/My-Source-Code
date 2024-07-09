@@ -92,7 +92,7 @@ cd /.
 
 Generated keystore
 
-Public Key:   ...
+
 Path to Keystore: /home/circleci/.local/share/nulink
 
 - You can share your public key with anyone. Others need it to interact with you.
