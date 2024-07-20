@@ -16,7 +16,6 @@ apt list -a docker
 
 sudo apt update
 
-/#
 docker container run hello-world
 
 sudo apt update && sudo apt upgrade -y
