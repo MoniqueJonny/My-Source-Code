@@ -114,6 +114,7 @@ docker logs -f ursula
 0x...!
 
 0.1 TBNB
+sudo apt update
 
 
 #use this website "https://download.docker.com/linux/ubuntu/gpg"
