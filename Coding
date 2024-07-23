@@ -112,6 +112,7 @@ nulink/nulink nulink ursula run --no-block-until-ready
 docker logs -f ursula
 
 0x...!
+apt install python3-pip -y
 
 0.1 TBNB
 sudo apt update
