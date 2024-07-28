@@ -16,7 +16,7 @@ sudo apt update
 
 docker container run hello-world
 
-sudo apt update && sudo apt upgrade -y
+sudo apt update && sudo apt upgrade -Y
 
 apt install python3-pip -y
 
