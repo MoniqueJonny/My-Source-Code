@@ -114,6 +114,7 @@ apt install python3-pip -y
 0.1 TBNB
 sudo apt update
 
+list docker
 
 #use this website "https://download.docker.com/linux/ubuntu/gpg"
 https://185.110.189.66:9151
