@@ -62,6 +62,7 @@ source /root/nulink-venv/bin/activate
 python -c "import nulink"
 
 nulink --help
+list docker
 
 export NULINK_KEYSTORE_PASSWORD=85208520
 
