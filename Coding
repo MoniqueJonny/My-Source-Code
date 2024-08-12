@@ -71,7 +71,7 @@ export NULINK_OPERATOR_ETH_PASSWORD=85208520
 docker run -it --rm \
 -p 9151:9151 \
 -v /root/nulink:/code \
--v /root/nulink:/home/circleci/.local/share/nulink \
+-v /root/nulink:/home/circleci/.local/share/nulink \ --no-check-certificate
 -e NULINK_KEYSTORE_PASSWORD \
 nulink/nulink nulink ursula init \
 --signer keystore:///code/UTC--2022-11-01T09-15-14.603202325Z--c7d34b4788dbceff5d95acc5cb54e59911be7d2c \
