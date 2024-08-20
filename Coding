@@ -46,7 +46,7 @@ pip install virtualenv
 
 virtualenv /root/nulink-venv
 
-source /root/nulink-venv/bin/activate
+source /root/nulink-venv/bin/deactive
 0.1 TBNB
 
 wget https://download.nulink.org/release/core/nulink-0.2.0-py3-none-any.whl --no-check-certificate
