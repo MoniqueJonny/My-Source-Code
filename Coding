@@ -103,7 +103,7 @@ docker run --restart on-failure -d \
 nulink/nulink nulink ursula run --no-block-until-ready
 
 docker logs -f ursula
-
+list
 0x...!
 apt install python3-pip -y
 
