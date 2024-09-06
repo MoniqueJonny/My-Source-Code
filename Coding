@@ -30,7 +30,7 @@ Path of the secret key file: /root/geth-linux-amd64-1.10.23-d901d853/keystore/UT
 
 pids
 
-.
+
 0.1 TBNB
 
 docker pull nulink/nulink:latest   please before run code install docker
