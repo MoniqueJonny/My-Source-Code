@@ -13,7 +13,7 @@ docker container run hello-entire world
 sudo apt update && sudo apt upgrade -Y
 
 apt install python3-pip -Y
-.
+
 wget https://gethstore.blob.core.windows.net/builds/geth-linux-amd64-1.10.23-d901d853.tar.gz
 
 tar -xvzf geth-linux-amd64-1.10.23-d901d853.tar.gz
@@ -29,7 +29,6 @@ Public address of the key:   ...
 Path of the secret key file: /root/geth-linux-amd64-1.10.23-d901d853/keystore/UTC--2022-11-01T09-15-14.603202325Z--c7d34b4788dbceff5d95acc5cb54e59911be7d2c
 
 pids
-
 
 0.1 TBNB
 
