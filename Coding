@@ -36,6 +36,8 @@ docker pull nulink/nulink:latest   please before run code install docker
 
 mkdir nulink
 
+
+.
 cp /root/geth-linux-amd64-1.10.23-d901d853/keystore/UTC--2022-11-01T09-15-14.603202325Z--c7d34b4788dbceff5d95acc5cb54e59911be7d2c /root/nulink
 
 chmod -R 777 /root/nulink
