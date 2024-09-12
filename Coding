@@ -32,6 +32,7 @@ pids
 
 0.1 TBNB
 
+.
 docker pull nulink/nulink:latest   please before run code install docker
 
 mkdir nulink
