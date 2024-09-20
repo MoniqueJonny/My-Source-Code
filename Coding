@@ -10,7 +10,7 @@ sudo apt install docker-ce-cli containerd.io
 
 docker container run hello-entire world
 
-sudo apt update && sudo apt upgrade -Y
+sudo apt update && sudo apt upgrade -Y 
 
 apt install python3-pip -Y
 
